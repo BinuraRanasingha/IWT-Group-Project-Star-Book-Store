@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dictionary</title>
+	
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+h2{
+  color: red;
+}
+
+.row {
+  margin: 5px -16px;
+}
+
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+
+.show {
+  display: block;
+}
+
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+.header{
+        padding: 1px;
+        text-align: center;
+        background: blue;
+        opacity: .8;
+        color: white;
+        font-size: 15px;
+       }
+
+</style>
+
+</head>
+<body>
+
+<div class="main">
+
+<div class="header">
+      <h1>Welcome to Kids Work Books Section</h1>
+
+</div>
+
+<hr>
+
+<h2>Work Books</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('EnglishWorkbooks')">English</button>
+  <button class="btn" onclick="filterSelection('MathematicsWorkbooks')">Mathematics</button>
+  <button class="btn" onclick="filterSelection('OtherWorkbooks')">Other</button>
+</div>
+
+
+<div class="row">
+  <div class="column EnglishWorkbooks">
+    <div class="content">
+      <img src="images/eB3.jpg" alt="Hear Say English" style="width:100%">
+      <h4>Hear Say English</h4>
+      <p>Rs.500</p>
+        <form method="POST" name="cartForm" action="php/addToCart.php">
+          <p><input style="width:100px" type="text" name="iNO" value="Item no:eB3" readonly></p>
+          <p><input style="width:100px" type="text" name="iQT" placeholder="Enter quantity"></p>
+          <p><button>Add to Cart</button></p>
+        </form>
+    </div>
+  </div>
+  <div class="column EnglishWorkbooks">
+    <div class="content">
+    <img src="images/eB4.jpg" alt="Learning English" style="width:100%">
+      <h4>Learning English</h4>
+      <p>Rs.450</p>
+        <form method="POST" name="cartForm" action="php/addToCart.php">
+          <p><input style="width:100px" type="text" name="iNO" value="Item no:eB4" readonly></p>
+          <p><input style="width:100px" type="text" name="iQT" placeholder="Enter quantity"></p>
+          <p><button>Add to Cart</button></p>
+        </form>
+    </div>
+  </div>
+  <div class="column EnglishWorkbooks">
+    <div class="content">
+    <img src="images/eB6.jpg" alt="Nursery English" style="width:100%">
+      <h4>Nursery English</h4>
+      <p>Rs.350</p>
+        <form method="POST" name="cartForm" action="php/addToCart.php">
+          <p><input style="width:100px" type="text" name="iNO" value="Item no:eB6" readonly></p>
+          <p><input style="width:100px" type="text" name="iQT" placeholder="Enter quantity"></p>
+          <p><button>Add to Cart</button></p>
+        </form>
+    </div>
+  </div>
+  
+  <div class="column MathematicsWorkbooks">
+    <div class="content">
+      <img src="images/mB2.jpg" alt="Easy Math WorkBook" style="width:100%">
+      <h4>Easy Math WorkBook</h4>
+      <p>Rs.500</p>
+        <form method="POST" name="cartForm" action="php/addToCart.php">
+          <p><input style="width:100px" type="text" name="iNO" value="Item no:mB2" readonly></p>
+          <p><input style="width:100px" type="text" name="iQT" placeholder="Enter quantity"></p>
+          <p><button>Add to Cart</button></p>
+        </form>
+    </div>
+  </div>
+  <div class="column MathematicsWorkbooks">
+    <div class="content">
+    <img src="images/mB3.jpg" alt="Kindergarten Math" style="width:100%">
+      <h4>Kindergarten Math</h4>
+      <p>Rs.350</p>
+        <form method="POST" name="cartForm" action="php/addToCart.php">
+          <p><input style="width:100px" type="text" name="iNO" value="Item no:mB3" readonly></p>
+          <p><input style="width:100px" type="text" name="iQT" placeholder="Enter quantity"></p>
+          <p><button>Add to Cart</button></p>
+        </form>
+    </div>
+  </div>
+  <div class="column MathematicsWorkbooks">
+    <div class="content">
+    <img src="images/mB9.png" alt="Brain Up With Mathematics" style="width:100%">
+      <h4>Brain Up With Mathematics</h4>
+      <p>Rs.550</p>
+        <form method="POST" name="cartForm" action="php/addToCart.php">
+          <p><input style="width:100px" type="text" name="iNO" value="Item no:mB9" readonly></p>
+          <p><input style="width:100px" type="text" name="iQT" placeholder="Enter quantity"></p>
+          <p><button>Add to Cart</button></p>
+        </form>
+    </div>
+  </div>
+
+  <div class="column OtherWorkbooks">
+    <div class="content">
+      <img src="images/mB1.jpg" alt="K2 IQ" style="width:100%">
+      <h4>K2 IQ</h4>
+      <p>Rs.300</p>
+        <form method="POST" name="cartForm" action="php/addToCart.php">
+          <p><input style="width:100px" type="text" name="iNO" value="Item no:mB1" readonly></p>
+          <p><input style="width:100px" type="text" name="iQT" placeholder="Enter quantity"></p>
+          <p><button>Add to Cart</button></p>
+        </form>
+    </div>
+  </div>
+  <div class="column OtherWorkbooks">
+    <div class="content">
+    <img src="images/oW2.jpg" alt="Pre-School Reading" style="width:100%">
+      <h4>Pre-School Reading</h4>
+      <p>Rs.350</p>
+        <form method="POST" name="cartForm" action="php/addToCart.php">
+          <p><input style="width:100px" type="text" name="iNO" value="Item no:oW2" readonly></p>
+          <p><input style="width:100px" type="text" name="iQT" placeholder="Enter quantity"></p>
+          <p><button>Add to Cart</button></p>
+        </form>
+    </div>
+  </div>
+  <div class="column OtherWorkbooks">
+    <div class="content">
+    <img src="images/oW3.jpg" alt="Tracing And Cutting" style="width:100%">
+      <h4>Tracing And Cutting</h4>
+      <p>Rs.350</p>
+        <form method="POST" name="cartForm" action="php/addToCart.php">
+          <p><input style="width:100px" type="text" name="iNO" value="Item no:oW3" readonly></p>
+          <p><input style="width:100px" type="text" name="iQT" placeholder="Enter quantity"></p>
+          <p><button>Add to Cart</button></p>
+        </form>
+    </div>
+  </div>
+
+</div>
+
+
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+  }
+}
+
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
+
+</body>
+</html>

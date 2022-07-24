@@ -1,0 +1,30 @@
+.aboutUs{
+	background-color:rgb(0,0,0,6);
+	width:75%;
+	margin:auto;
+	color:#FFFFFF;
+	padding:10px 0px 10px 0px;
+	text-align:center;
+	font-style:italic;
+	font-family:"Comic Sans MS";
+}
+
+h1{
+	font-family:"Comic Sans MS";
+	font-style: italic;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+h5{
+	font-family:"Comic Sans MS";
+	margin-left:auto;
+	margin-right:auto;
+	font-style:italic;
+}
+
+#img1{
+	padding-right:55px;
+}

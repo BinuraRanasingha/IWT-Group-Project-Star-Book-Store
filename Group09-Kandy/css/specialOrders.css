@@ -1,0 +1,41 @@
+.specialO{
+	background-color:rgb(0,0,0,6);
+	width:75%;
+	margin:auto;
+	color:#FFFFFF;
+	padding:10px 0px 10px 0px;
+	text-align:center;
+	border-radius:15px 15px 15px 15px;
+	
+}
+
+.specialbutton1,.specialbutton2{
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.specialbutton1 span:after ,.specialbutton2 span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.specialbutton1:hover span,.specialbutton2:hover span {
+  padding-right: 25px;
+}
+
+.specialbutton1:hover span:after ,.specialbutton2:hover span:after {
+  opacity: 1;
+  right: 0;
+}

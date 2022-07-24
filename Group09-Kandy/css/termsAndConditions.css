@@ -1,0 +1,53 @@
+.conditions
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%
+}
+
+p
+{
+	font-family: sans-serif;
+	width:95%;
+	margin-left:20px;
+	font-size:17px;
+	color:black;
+}
+
+h1
+{
+	font-family: sans-serif;
+	width:95%;
+	margin-left:20px;
+}
+
+hr
+{
+	border-top:2px solid red;
+}
+
+
+
+h2
+{
+	font-family: sans-serif;
+	width:95%;
+}
+
+.p1
+{
+	color:blue;
+	font-size:20px;
+}
+
+.new
+{
+	color:black;
+}
+
+.div1
+{
+	background-color:gray;
+	padding-bottom:10px;
+}

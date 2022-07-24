@@ -1,0 +1,82 @@
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+.checkform{
+	background-color:rgb(0,0,0,6);
+	width:50%;
+	margin:auto;
+	color:#FFFFFF;
+	padding:10px 0px 10px 0px;
+	text-align:center;
+	border-radius:15px 15px 15px 15px;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-3 {
+  -ms-flex: 25%; 
+  flex: 25%;
+}
+
+.col-2 {
+  -ms-flex: 50%; 
+  flex: 50%;
+}
+
+.col-1 {
+  -ms-flex: 75%; 
+  flex: 75%;
+}
+
+
+.col-3,
+.col-2,
+.col-1 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+
+input[type=text] {
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input[type="submit"]{
+	background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin-left:auto;
+  margin-right:auto;  
+  border: none;
+  width: 50%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+

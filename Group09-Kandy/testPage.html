@@ -1,0 +1,24 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PHP Crud	</title>
+</head>
+<body>
+	<form action="php/php_insert_update_delete_search.php" method="post">
+		<input type="text" name="cName" placeholder="Customer Name" value="<?php echo $cName; ?>"><br><br>
+		<input type="text" name="cNIC" placeholder="NIC" value="<?php echo $cNIC; ?>"><br><br>
+		<input type="text" name="cAdd" placeholder="Address" value="<?php echo $cAdd;  ?>"><br><br>
+		<input type="numberr" name="gVP" placeholder="Gift Voucher Price" value="<?php echo $gVP; ?>"><br><br>
+		<input type="text" name="gVT" placeholder="Customer Mobile Number" value="<?php echo $gVT; ?>"><br><br>
+		<input type="number" name="cMN" placeholder="Customer Mobile Number" value="<?php echo $cMN; ?>"><br><br>
+		<div>
+			<input type="submit" name="insert" value="Add">
+			<input type="submit" name="update" value="Update">
+			<input type="submit" name="delete" value="Delete">
+			<input type="submit" name="search" value="Find">
+		</div>
+	</form>
+</body>
+</html>

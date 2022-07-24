@@ -1,0 +1,36 @@
+.images
+{
+	display: block;
+	width: 50%
+}
+
+.column 
+{
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+
+.row::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn1
+{
+	background-color:red;
+	color:white;
+	padding-top:10px;
+	padding-bottom:10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.stationary
+{
+	background-color:grey;
+}

@@ -1,0 +1,116 @@
+.form{
+	width:600px;
+	margin-left:500px;
+	margin-right:40px;
+	background-color:rgb(0,0,0,6);
+	color:#FFFFFF;
+}
+#heading{
+  	font-family: "Times NewRoman", Times, serif;
+  	font-size: 40px;
+	font-weight: bold;
+}
+label{
+	width:50%;
+	margin-left:20px;
+	margin-right:20px;
+}
+input[type="text"],input[type="tel"],input[type="email"],input[type="date"],input[type="password"],textarea[name="address"]
+{
+	width=50%;
+	margin-left:20px;
+}
+select[name="date"]
+{
+	width=50%;
+	margin-left:20px;
+}
+h3{
+	text-align: center:
+  	font-family: Arial, Helvetica, sans-serif;
+	font-size: 27px;
+	font-weight: bold;
+	color:white;
+}
+hr{
+ 	 border: 1px solid black;
+}
+
+li a{
+	display: block;
+	color: gray;
+	text-align: center;
+	padding: 12px 14px;
+}
+.p1{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 17px;
+	font-weight: bold;
+	font-color:Blue;
+}	
+#button{
+	font-size:10px;
+}
+#submit{
+	height:35px;
+	width:200px;
+	background-color:orange;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+#confirm{
+	height:50px;
+	width:200px;
+	background-color:Blue;
+}
+h4{
+	margin-left:1000px;
+}
+*{
+	box-sizing:border-box;
+}
+body{
+	font-family:Arial,Helvetica,sans-serif;
+}
+nav{
+	float:left;
+	width:10%;
+	height:900px;
+	padding:20px;
+}
+nav ul {
+	list-style-type:none;
+	padding: 0;
+}
+article {
+	float:left;
+	padding:20px;
+	width:70%;
+	height:9-0px;
+}
+section:after{
+	content: "";
+	display: table;
+	clear:both;
+}
+@media (max-width:600px) {
+	nav,article {
+		width:100%;
+		height:auto;
+	}
+}
+.error {
+	background : #F2DEDE;
+	color: #A94442;
+	padding: 10px;
+	width: 95%;
+	border-radius: 5px;
+}
+	
+
+	
+	

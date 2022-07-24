@@ -1,0 +1,22 @@
+
+body{
+	background-image:url("../images/bbb.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	margin:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.h1{
+	color:yellow;
+	font-size:70px;
+	font-family:monospace;
+}
+.h2{
+	color:yellow;
+	font-size:70px;
+	font-family:monospace;
+}
+button {
+	color:blue;
+}

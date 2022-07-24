@@ -1,0 +1,570 @@
+<!DOCTYPE.html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		body {
+    		background-image: url(images/kirr.jpg);
+    		-webkit-background-size: cover;
+    		background-size: cover;
+    		background-position: center;
+    		background-attachment: fixed;
+    		height: 100vh;
+    		margin: 0;
+	    	}
+    	
+	    .menu-area{
+	    	height: 38%;
+	    	width: 81.6%;
+	    	overflow: auto;
+	    	background:url("images/headerBG2.jpg");
+	    	float:right;
+	    }
+
+	    .menu-area ul{
+	    	margin: 0;
+	    	padding: 0;
+	    	list-style: none;
+	    }
+
+	    .menu-area ul li{
+	    	float: left;
+
+	    }
+
+	    .menu-area ul li a{
+	    	width: 120px;
+	    	display: block;
+	    	padding: 10px;
+	    	color: #fff;
+	    	text-decoration: none;
+	    	text-transform: uppercase;
+	    	font-family: poppins;
+	    	font-size: 18px;
+	    	text-align: center;
+	    	margin-top: 80px;
+	    }
+
+	    .menu-area ul li a:hover{
+	    	background: blue;
+	    }
+
+	    #search{
+	    	width:220px;
+	    	padding:5px;
+	    	-webkit-border-radius:25px;
+	    	-moz-border-radius:25px;
+	    	border-radius:20px;
+	    	border: none;
+	    	font-size: 18px;
+	    	text-align: center;
+	    	margin: 15px;
+	    	margin-top: 80px;
+
+	    }
+
+	    #searchButton{
+	    	color: #e84118;
+	    	float: right;
+	    	width: 100px;
+	    	height: 50px;
+	    	border-radius: 20px;
+	    	background: orange;
+	    	display: flex;
+	    	justify-content: center;
+	    	align-items: center;
+	    	padding:5px;
+	    	border: none;
+	    	font-size: 18px;
+	    	margin: 10px;
+	    	margin-top: 80px;
+	    }
+
+   	    #shoppingCartButton{
+	    	color: #e84118;
+	    	float: right;
+	    	width: 140px;
+	    	height: 50px;
+	    	border-radius: 20px;
+	    	background: orange;
+	    	display: flex;
+	    	justify-content: center;
+	    	align-items: center;
+	    	padding:5px;
+	    	border: none;
+	    	font-size: 18px;
+	    	margin: 10px;
+	    	margin-top: 80px;
+	    }
+
+
+	   .wrapper{
+	   	width: 1100px;
+	   	margin: 0 auto;
+	   }
+
+	   .side-navbar{
+	   	height:38%;
+	   	width: 248px;
+	   	position: relative;
+	   	z-index: 1;
+	   	top: 0;
+	   	left: 0;
+	   	background-color: black;
+	   	overflow-x: hidden;
+	   	padding-top:0px;
+	   }
+
+	   .side-navbar a{
+	   	padding: 1px 1px 1px 10px;
+	   	text-decoration: none;
+	   	font-size: 16px;
+	   	display: block;
+	   	text-transform: uppercase;
+	   	color: #fff;
+	   	overflow-x: hidden;
+	   	
+	   }
+
+	   .side-navbar a.active{
+	   	background-color: #4CAF50;
+	   	color: white;
+	   }
+
+	   .side-navbar a:hover:not(.active){
+	   	background-color: blue;
+	   	color: white;
+	   }
+	   .side-navbar a:hover{
+	   	color: blue;
+	   }
+
+	   .side-navbar a{
+	   	line-height: 60px;
+	   	border-bottom: 1px solid blue;
+	   	float: none;
+	   }
+
+	   	.side-navbar button{
+	   	line-height: 60px;
+	   	border-bottom: 1px solid blue;
+	   	float: none;
+	   }
+
+	   .sidenav a, .dropdown-btn {
+ 	    padding: 5px 1px 1px 10px;
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+       }
+
+       .sidenav a:hover, .dropdown-btn:hover {
+       color: cyan;
+       }
+
+       .main {
+       margin-left: 200px; 
+       font-size: 20px;      
+       padding: 0px 10px;
+     }
+
+     .active {
+      background-color: green;
+      color: white;
+    }
+
+    .dropdown-container {
+     display: none;
+     background-color: grey;
+     padding-left: 8px;
+   }
+
+
+
+   .wrapper{
+   	width: 1100px;
+   	margin: 0 auto;
+   }
+
+  .banner{
+   	height: 100vh;
+   	width: 100%;
+   	overflow: hidden;
+   	background-image: "Images/logo.png";
+   	-webkit-background-size:cover;
+   	background-size: cover;
+   	background-position: center center;
+  }
+
+.text-content h2{
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 20%;
+	font-size: 90px;
+	margin: 0;
+	color: #fff;
+	text-shadow: 0 5px 10px;
+	}
+
+
+
+.awardedBooksHeader{
+	       padding: 1px;
+     	   text-align: center;
+     	   opacity: .9;
+      	   color: white;
+      	   font-size: 15px;
+      	   
+        }
+
+
+.content{
+     	   padding: 5px;
+        }
+
+.popularAuthorsHeader{
+	       padding: 1px;
+     	   text-align: center;
+     	   opacity: .9;
+      	   color: white;
+      	   font-size: 15px;
+      	   
+        }
+
+.award {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.awardBox{
+	width:100%;
+	height: 50px;
+	position: relative;
+	bottom: 0;
+	z-index: -1;
+	background-color: white;}
+.para{
+	color:white;}
+.ph{
+	color:white}
+
+	
+
+
+
+    </style>
+	<link rel ="stylesheet" href="css/HomeStyles.css">
+	<link rel ="stylesheet" href="css/awardedBooks.css">
+	
+	<title>STAR BOOK STORE</title>
+
+</head>
+<body>
+<center>
+  
+	<img src="Images/logo.png" width="200"height="200" class="logo">
+ </center>
+ 
+ <center>
+	<h1 style="background-color:black; color:white; width: 80%;";>STAR BOOK STORE</h1>
+   
+</center>
+
+<center>
+	<h3 style="background-color:black; color:white; width: 20%;" id="header">WELCOME!</h3>
+</center>
+
+</body>
+<hr id="test">
+
+<div class="menu-area">
+<ul> 
+    <li class="menu"><a href="home.html">Home</a></li>
+    <li class="menu"><a href="starpublicatons.html">STAR Publications</a></li>
+        
+	<li class="menu"><a href="kidsZone.html">Kids Zone</a></li>
+	<li class="menu"><a href="newspaperhome.html.html">News Papers</a></li>
+
+	
+<form action="php/searchButtonSubmit.php" method="POST">
+	<li>
+	<input type="text" name="search" id="search" placeholder="what are you looking for...">
+	</li>
+
+	<li>
+	<button type="submit" name="submit" id="searchButton" class="submit" value="Search">search</button>
+	</li>
+</form>
+	<li>
+	<button type="submit" name="Cart" id="shoppingCartButton" class="submit" value="Shopping Cart">Shopping Cart</button>
+	</li>
+
+</ul>
+
+</div>
+
+
+
+
+<div class="side-navbar">
+	
+	<button class="dropdown-btn">My Account</button>
+ 
+  <div class="dropdown-container">
+
+  	<!--Save your page as signIn.html-->
+    <a href="welcome.html">Sign In</a>
+
+    <!--Save your page as signUp.html-->
+    <a href="signUp.html">Sign Up</a>
+  </div>
+
+  	<!--Save your page as bestSellers.html-->
+	<a href="bestSellers.html">Best Sellers</a>
+	
+  <button class="dropdown-btn">Sinhala
+    
+  </button>
+  <div class="dropdown-container">
+  	<!--Save your page as sinhalaNovels.html-->
+    <a href="#">Novels</a>
+    <!--Save your page as sinhalaShortStories.html-->
+    <a href="#">Short Stories</a>
+    <!--Save your page as sinhalaFictions.html-->
+    <a href="#">Fictions</a>
+  </div>
+
+ <button class="dropdown-btn">English
+    
+  </button>
+  <div class="dropdown-container">
+  	<!--Save your page as englishNovels.html-->
+  	<a href="englishNovels.html">Novels</a>
+    <!--Save your page as englishShortStories.html-->
+    <a href="englishShortStories.html">Short Stories</a>
+    <!--Save your page as englishFictions.html-->
+    <a href="englishFictions.html">Fictions</a>
+  </div>
+	
+ <button class="dropdown-btn">Tamil
+      </button>
+  <div class="dropdown-container">
+  	<!--Save your page as tamilNovels.html-->
+    <a href="tamilNovels.html">Novels</a>
+    <!--Save your page as tamilShortStories.html-->
+    <a href="tamilShortStories.html">Short Stories</a>
+    <!--Save your page as tamilFictions.html-->
+    <a href="tamilFictions.html">Fictions</a>
+  </div>
+
+	<!--Save your page as magazines.html-->
+	<a href="magazines.html">Magazines</a>
+	<!--Save your page as stationaries.html-->
+	<a href="stationaries.html">Stationaries</a>
+
+	<!--Save your page as specialOrders.html-->
+	<a href="specialOrders.html">Special Orders</a>
+	<!--Save your page as giftVouchers.html-->
+	<a href="editGiftVoucher.html">Gift Vouchers</a>
+	<!--Save your page as delivery.html-->
+	<a href="php/delivary.php">Delivery</a>
+</div>
+
+
+
+<center><h1 class="ph" ><b>Privacy Policy</b></h1></center></head>
+<p class="para">
+
+Star Online Book Store respects your concerns about privacy and values the relationship we have with you. This Privacy Policy describes our privacy practices with respect to information collected through our websites, applications, the various social networking platforms we use, and any other online service that links to this Privacy Policy, including any websites and online services we operate on behalf of our authors (collectively referred to as the “Sites”). This Privacy Policy does not apply to information that you may provide to us other than through our Sites, such as over the phone, by mail, or in person unless expressly indicated by us (e.g., by including a link to this Privacy Policy).<br>
+
+Please review our full Privacy Policy below before using our Sites. In particular, please review the sections: What Information We Collect About You (including information about cookies and similar technologies), How We Use Your Information, and Who We Share Your Information With. By using our Sites, you are accepting the practices described in this Privacy Policy.<br>
+ </p>
+ 
+<h3 class="ph">WHAT INFORMATION WE COLLECT ABOUT YOU</h3>
+<p class="para">
+The information collected when you interact with our Sites falls into two categories: (1) Personal information you voluntarily provide such as your name, address, email address, and credit card number; and (2) non-personal information collected through technology, which includes tracking information collected by us as well as third parties.
+
+Personal Information You Provide Directly To Us:<br>
+
+We may ask you to provide your personal information, demographic information or information about your preferences or interests when you:<br>
+
+Register for an account on the Sites<br>
+Sign up to receive email newsletters from us<br>
+Make a purchase on the Sites<br>
+Participate on social media accounts involving our authors, books or brands<br>
+Participate in communities or forums on the Sites<br>
+Submit user generated content on any part of the Sites that permit it<br>
+
+
+In addition to any information you provide directly to us, we and our third party service providers may use a variety of technologies that automatically collect certain tracking information when you interact with the Sites or emails sent to you.<br>
+
+</p>
+<h3 class="ph">CHILDREN’S PRIVACY POLICY</h3>
+<p class="para">
+
+ This Children’s Privacy Policy describes our practices with respect to the collection of personal information from children under the age of 13. This Site does not knowingly collect, use, or disclose personal information from children under the age of 13 without prior parental consent.
+We do not require children to share any personal information in order to participate on this Site. On occasion, however, we may collect personal information, such as an email address from a child as part of an activity.<br>
+</p>
+
+<h3 class="ph">THIRD PARTY CONTENT AND LINKS TO THIRD PARTY WEBSITES</h3>
+<p class="para">
+Our Sites may contain content hosted or served by third parties or link to websites operated by affiliates of third parties. Please be advised that the practices described in this Privacy Policy for PRH do not apply to information gathered by these third parties. We are not responsible for the actions and privacy policies employed by any third party, and our hosting of third party content or linking to third party websites does not constitute an endorsement of the content or business practices of those third parties.<br>
+</p>
+
+<h3 class="ph">PUBLIC AREAS, FORUMS, REVIEWS, AND COMMUNITY AREAS</h3>
+<p class="para">
+
+Please remember that any information you share in public areas, such as forums, message boards or feedback sections, becomes public and anyone may take and use that information. Please be careful about what you disclose and do not post any personal information that you expect to keep private. Please consult our Terms of Use and the applicable guidelines, if any, for use of our forums and other community areas for more information.<br>
+</p>
+
+<h3 class="ph">GOVERNING LAW</h3>
+<p class="para">
+These Sites are published in the Sri Lanka. We attempt to protect the personal information of all users of our Sites and we attempt to comply with local data protection, but our family of Sites are located and targeted to Sri Lanka citizens and our policies are directed at compliance with those laws. If you are uncertain whether this Privacy Policy conflicts with the applicable local privacy laws where you are located.<br>
+</p >
+<h3 class="ph">CHANGES TO THIS PRIVACY POLICY</h3>
+<p class="para">
+As our Sites continue to develop, we may add new services and features to them. In the event that these additions affect our Privacy Policy, or if other changes in our privacy practices or applicable laws necessitate changes to the Privacy Policy, this document will be updated accordingly. If we make a material change in the way we use your personal information, we will provide prominent notice of the change on the Sites or in an email to you. We will not, however, materially change our policies and practices to make them less protective of personal information we have previously collected from you without your express consent.<br>
+
+
+
+
+
+</p>
+
+
+<!-- Delete Upto Here-->
+
+
+<br>
+<br>
+
+
+</div>
+<footer>
+  <div class="footer-wrapper">
+
+	<div class="single-footer" >
+	<h2>Payment Options</h2>
+	<ul>
+		<li>Visa Card</li>
+	  	<li>Master Card</li>
+	  	<li>American Express</li>
+	  	<li>Credit Card</li>
+	  	<li>PayPal</li>
+	  	<li>EZY Cash</li>
+	</ul>
+	</div>
+
+	<div class="single-footer" >
+	<h2>Contact Us</h2>
+	<ul>
+		<li>Address:</li>
+		<li>Star Publications</li>
+	  	<li>No.212/A</li>
+	  	<li>New Kandy Road</li>
+	  	<li>Kandy</li>
+	  	<li>Email:</li>
+	  	<li>Books@STAR.lk</li>
+	  	<li>Telephone:</li>
+	  	<li>0112233445</li>
+	</ul>
+	</div>
+
+
+	<div class="single-footer" >
+          <br>
+	  <img src="Images/logo.png" id="i2">
+	  <h2>Star Publications</h2>
+
+	</div>
+
+
+
+	<div class="single-footer" >
+	  <h2>Our Store</h2>
+	  	<ul>
+		<li><a href="aboutUs.html">About Us</a></li>
+
+		<!--Save your page as feedback.html-->
+		<li><a href="feedbacks.html">Feedbacks</a></li>
+		<!--Save your page as privacyPolicy.html-->
+		<li><a href="privacyPolicy.html">Prvacy Policy</a></li>
+		<!--Save your page as termsAndConditions.html-->
+	  	<li><a href="termsAndConditions.html">Terms and Conditions</a></li>
+		<!--Save your page as returnPolicy.html-->
+	  	<li><a href="returnPolicy.html">Return Policy</a></li>
+	  	</ul>
+	</div>
+
+		<div class="single-footer" >
+	  <h2>Social Media</h2>
+	  	<ul>
+		<li><a href="https://www.facebook.com/StarBookStore">Facebook</a></li>
+	  	<li><a href="https://www.twitter.com/StarBookStore">Twitter</a></li>
+	  	<li><a href="https://www.instagram.com/StarBookStore>Instagram"></a></li>
+	  	<li><a href="https://www.linkedin.com/StarBookStore">LinkedIn</a></li>
+	  	<li>Whatsapp : 0789101112</li>
+	  	<li>Viber: 0789101112</li>
+	</ul>
+	</div>
+
+
+  </div>
+</footer>
+
+<script>
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+
+
+
+
+</script>
+
+
+
+
+</body>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

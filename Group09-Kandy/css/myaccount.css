@@ -1,0 +1,33 @@
+fieldset{
+	height:300px;
+	width:950px;
+	background-color:#DFEAEB;
+	margin-left:100px;
+	
+}
+h4{
+	margin-right:600px;
+}
+.edit{
+	margin-right:600px;
+}
+.color{
+	color:white;
+}
+h2{
+	color:white;
+	margin-right:10px;
+}
+.see{
+	position:absolute;
+	left:720px;
+	text-decoration:null;
+	link-style;null;
+	color:yellow;
+	font-size:20px;
+}
+#submit{
+	color:blue;
+}
+	
+	
